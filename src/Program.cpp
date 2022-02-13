@@ -11,7 +11,7 @@
 #include "Program.h"
 
 
-#define URL_API "localhost:5221/api/"
+#define URL_API "http://192.168.2.29:5229/api/ActionFeu"
 #define BORNE_RX 16
 #define BORNE_TX 17
 
@@ -20,7 +20,7 @@ Program::Program() {
 	Serial.begin(MONITOR_SPEED);
 	while ( ! Serial ) { ; }
 
-	// ConfigurationWiFi wifi(true);
+	ConfigurationWiFi wifi(true);
 
 
 	IntersectionProxySerial* intersection = new IntersectionProxySerial(nullptr);

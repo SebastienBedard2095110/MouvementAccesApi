@@ -12,10 +12,11 @@ IntersectionProxySerial::IntersectionProxySerial(AbstractChaine* prochain)
 }
 
 void IntersectionProxySerial::traiter(Requete requete) {
-	Serial.println("Reçu:");
+	Serial.println("\n\nTransfert vers intersection:");
 
 	Serial.print("\tAction: ");
-	Serial.println(requete.action);
+	Serial.print(requete.action);
+	Serial.println(" secondes");
 	Serial.print("\tborneId: ");
 	Serial.println(requete.borneId);
 	Serial.print("\tClef: ");
